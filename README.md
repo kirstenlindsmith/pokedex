@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+## Pokedex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Tasks
 
-## Available Scripts
+We hired a developer to create a Pokedex but it seems like they only did some parts and not the others. The goal is to finish the missing product requirements.
 
-In the project directory, you can run:
+1. Fetch all pokemon from the `POKEMON_URL` endpoint. The endpoint has been provided in the helper.js file.
+2. Display all the pokemon in a single table with just the first 3 attributes as columns.
+3. Each row of the table should be clickable to open a card with more details of the individual pokemon, display the first 5 attributes in this format. Use `POKEMON_URL/pokemon/:id` for individual pokemon.Mock card screenshot to show: [Pokedex Figma design mockup](https://www.figma.com/file/Fy932MOfO9gPkoUdIgbj1Q/Untitled)
+4. Have different card background colors depending on what type the pokemon is:
+   - Fire - Orange
+   - Water - Aqua
+   - Dragon - Brown
+   - Grass - Green
+   - Poison - Black
+   - All Other: Alloy-Green
 
-### `yarn start`
+### Bonus Tasks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Have a search bar at the top that allows you to search by name
+2. Add some pagination (pageSize 10)
+3. Add a few tests
+4. How would you store media assets for this API and make the individual cards more dynamic?
+5. Add a filter endpoint for all the fire pokemon and water pokemon and displays the cards
+   `/pokemon?Types_like=Fire`
+   and `/pokemon?Types_like=Water`
+   TODO: add a few screenshots for expected behavior
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+_Note: If a Pokemon has more than 2 types: you can choose which background color to display._
 
-### `yarn test`
+**Pokemon Dataset:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+TODO: note server endpoints are on https and use
+https://www.npmjs.com/package/json-server endpoints

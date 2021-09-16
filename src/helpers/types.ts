@@ -1,0 +1,38 @@
+export interface Pokemon {
+  Name: string,
+  Total: string,
+  HP: string,
+  Attack: string,
+  Defense: string,
+  "Sp. Atk": string,
+  "Sp. Def": string,
+  Speed: string,
+  Generation: string,
+  Legendary: string, //boolean
+  id: string,
+  Types: string[],
+}
+
+export enum colorValues {
+  black = '#333333',
+  bug = '#82ad98',
+  electric = '#e6e191',
+  fairy = '#e691cc',
+  fighting = '#d6905a',
+  fire = '#d65a5a',
+  flying = '#a8b6c1',
+  ghost = '#8678c4',
+  grass = '#8ede7e',
+  gray = '#4d4d4d',
+  ground = '#9e8a75',
+  dark = '#666666',
+  default = '#e6e6e6',
+  dragon = '#8ed4cc',
+  ice = '#c5eaed',
+  normal = '#c7ab9f',
+  poison = '#9363bf',
+  psychic = '#a66f94',
+  rock = '#787573',
+  steel = '#7ba69e',
+  water = '#7693db',
+}
